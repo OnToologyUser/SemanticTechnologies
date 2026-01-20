@@ -62,6 +62,9 @@
       "@id" : "http://www.owl-ontologies.com/base#StageDirectionID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "references" : {
+      "@id" : "http://purl.org/dc/terms/references"
+    },
     "TextStageDirection" : {
       "@id" : "http://www.owl-ontologies.com/base#TextStageDirection",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -323,6 +326,9 @@
     "NoteReferencesVerse" : {
       "@id" : "http://www.owl-ontologies.com/base#NoteReferencesVerse",
       "@type" : "@id"
+    },
+    "Introduction" : {
+      "@id" : "http://purl.org/dc/terms/Introduction"
     },
     "NTomas" : {
       "@id" : "http://www.owl-ontologies.com/base#NTomas"
