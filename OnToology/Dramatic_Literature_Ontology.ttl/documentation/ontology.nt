@@ -1,0 +1,861 @@
+<http://www.owl-ontologies.com/base#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/Introduction> "This ontology has been developed to explore the potential of semantic technologies for the formal representation of literary knowledge. By modeling a dramatic text and its analytical dimensions in a structured way, the ontology aims to bridge traditional literary scholarship and computational approaches. It demonstrates how ontological modeling can support the organization, interpretation, and reuse of complex cultural and textual data." .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/abstract> "This ontology aims to provide a formal and structured semantic representation of the most relevant elements of a complex dramatic literary work, taking La vida es sueño by Pedro Calderón de la Barca as a case study. The model integrates bibliographic description with structural, metrical, and analytical components traditionally used in literary analysis, enabling a unified representation of both the text and its critical interpretation.\n\nThe ontology adopts the FRBR conceptual framework as its structural backbone in order to distinguish between different levels of textual abstraction—work, expression, manifestation, and item—allowing the representation of multiple editions, versions, and academic studies associated with the same literary work. On this basis, the model incorporates domain-specific entities such as acts, scenes, and verses, as well as mechanisms for representing metrical structures, accentual analysis systems, and textual annotations.\n\nControlled vocabularies are employed to model categorical aspects such as social roles and marital status, avoiding unnecessary class hierarchies and favoring extensibility and reuse. The ontology has been implemented in OWL and evaluated using automated quality-assessment tools, ensuring coherence with current best practices in ontology engineering.\n\nOverall, the ontology demonstrates the applicability of semantic technologies to the formal modeling of literary texts and contributes a reusable and extensible resource for research in the field of Digital Humanities." .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/bibliographicCitation> "Colubi, J.; Cano, L. (2026). Dramatic Literature Ontology: A semantic model for the analysis of dramatic texts. Version 1.0.0. Available at: https://javiercolubi.github.io/SemanticTechnologies/OnToology/Dramatic_Literature_Ontology.ttl/documentation/index-en.html#crossreference" .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/creator> "Laura Cano & Javier Colubi" .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/description> "This ontology defines a structured semantic model for representing the internal organization and analytical features of dramatic texts. It focuses on linking literary structure, formal analysis, and scholarly commentary within a single coherent framework. The model is designed to be extensible and interoperable, supporting digital humanities research and semantic querying of literary works." .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/references> "Alobaid, A., Garijo, D., Poveda-Villalón, M., Santana-Perez, I., Fernández-Izquierdo, A., & Corcho, O. (2018). Automating ontology engineering support activities with OnToology. Journal Of Web Semantics, 57, 100472. https://doi.org/10.1016/j.websem.2018.09.003 \n\nBaker, T. (2000). A grammar of Dublin Core. D-lib magazine, 6(10), 3.\n\nBIBO (RDF). (2020, 3 febrero). DCMI. Recuperado 7 de enero de 2026, de https://www.dublincore.org/specifications/bibo/bibo/ \n\nChávez-Feria, S., García-Castro, R., & Poveda-Villalón, M. (2022). Chowlk: from UML-Based Ontology Conceptualizations to OWL. En Lecture notes in computer science (pp. 338-352). https://doi.org/10.1007/978-3-031-06981-9_20 \n\nDe la Barca, P. C. (1977). La vida es sueño. Edición crítica C. Morón. Ediciones Catedra S.A.\nDewey Decimal classification. (s. f.). Dewey Decimal Classification. Recuperado 19 de enero de 2026, de https://entities.oclc.org/worldcat/ddc/ \n\nGarijo, D. (2017). WIDOCO: A Wizard for Documenting Ontologies. En Lecture notes in computer science (pp. 94-102). https://doi.org/10.1007/978-3-319-68204-4_9 \n\nMiles, A., & Bechhofer, S. (2009). SKOS simple knowledge organization system reference.\n\nMusen, M. A. (2015). The protégé project. AI Matters, 1(4), 4-12. https://doi.org/10.1145/2757001.2757003 \n\nPoveda-Villalón, M., Gómez-Pérez, A., & Suárez-Figueroa, M. C. (2014). OOPS! (ONtOlogy Pitfall Scanner!). International Journal On Semantic Web And Information Systems, 10(2), 7-34. https://doi.org/10.4018/ijswis.2014040102 \n\nPoveda-Villalón, M., Fernández-Izquierdo, A., Fernández-López, M., & García-Castro, R. (2022). LOT: An industrial oriented ontology engineering framework. Engineering Applications Of Artificial Intelligence, 111, 104755. https://doi.org/10.1016/j.engappai.2022.104755\n\nTeam, F. (2022). FAIRsharing record for: Essential FRBR in OWL2 DL Ontology [Conjunto de datos]. En FAIRsharing.org. https://doi.org/10.25504/fairsharing.b34b43" .
+<http://www.owl-ontologies.com/base#> <http://purl.org/dc/terms/title> "Dramatic Literature Ontology: A semantic model for the analysis of dramatic texts." .
+<http://www.owl-ontologies.com/base#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/Introduction
+<http://purl.org/dc/terms/Introduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/mod#createdWith> .
+# 
+# http://purl.org/dc/terms/references
+<http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/frbr/#embodiment
+<http://purl.org/spar/frbr/#embodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#embodiment> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/frbr/#embodimentOf> .
+<http://purl.org/spar/frbr/#embodiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#expression> .
+<http://purl.org/spar/frbr/#embodiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#manifestation> .
+<http://purl.org/spar/frbr/#embodiment> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular expression is found in a certain manifestation" .
+<http://purl.org/spar/frbr/#embodiment> <http://www.w3.org/2000/01/rdf-schema#label> "embodiment" .
+# 
+# http://purl.org/spar/frbr/#embodimentOf
+<http://purl.org/spar/frbr/#embodimentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#manifestation> .
+<http://purl.org/spar/frbr/#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#expression> .
+<http://purl.org/spar/frbr/#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifestation is an embodiment of an expression" .
+<http://purl.org/spar/frbr/#embodimentOf> <http://www.w3.org/2000/01/rdf-schema#label> "embodiment of" .
+# 
+# http://purl.org/spar/frbr/#has_creator
+<http://purl.org/spar/frbr/#has_creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#has_creator> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.owl-ontologies.com/base#HasAuthor> .
+<http://purl.org/spar/frbr/#has_creator> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/frbr/#isCreatorOf> .
+<http://purl.org/spar/frbr/#has_creator> <http://www.w3.org/2000/01/rdf-schema#comment> "A work was created by an Author" .
+<http://purl.org/spar/frbr/#has_creator> <http://www.w3.org/2000/01/rdf-schema#label> "has_creator" .
+# 
+# http://purl.org/spar/frbr/#has_exemplar
+<http://purl.org/spar/frbr/#has_exemplar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#has_exemplar> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/frbr/#is_exemplar_of> .
+<http://purl.org/spar/frbr/#has_exemplar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#manifestation> .
+<http://purl.org/spar/frbr/#has_exemplar> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#item> .
+<http://purl.org/spar/frbr/#has_exemplar> <http://www.w3.org/2000/01/rdf-schema#comment> "A manifestation has an exemplar" .
+<http://purl.org/spar/frbr/#has_exemplar> <http://www.w3.org/2000/01/rdf-schema#label> "has_exemplar" .
+# 
+# http://purl.org/spar/frbr/#has_realization
+<http://purl.org/spar/frbr/#has_realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#has_realization> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/frbr/#is_realization_of> .
+<http://purl.org/spar/frbr/#has_realization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+<http://purl.org/spar/frbr/#has_realization> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#expression> .
+<http://purl.org/spar/frbr/#has_realization> <http://www.w3.org/2000/01/rdf-schema#comment> "A work is realizated by an expression" .
+<http://purl.org/spar/frbr/#has_realization> <http://www.w3.org/2000/01/rdf-schema#label> "has_realization" .
+# 
+# http://purl.org/spar/frbr/#isCreatorOf
+<http://purl.org/spar/frbr/#isCreatorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#isCreatorOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.owl-ontologies.com/base#IsAuthorOf> .
+<http://purl.org/spar/frbr/#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+<http://purl.org/spar/frbr/#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Author> .
+<http://purl.org/spar/frbr/#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An author created a work" .
+<http://purl.org/spar/frbr/#isCreatorOf> <http://www.w3.org/2000/01/rdf-schema#label> "is creator of" .
+# 
+# http://purl.org/spar/frbr/#is_exemplar_of
+<http://purl.org/spar/frbr/#is_exemplar_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#is_exemplar_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#item> .
+<http://purl.org/spar/frbr/#is_exemplar_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#manifestation> .
+<http://purl.org/spar/frbr/#is_exemplar_of> <http://www.w3.org/2000/01/rdf-schema#comment> "An item is exemplar of a manifestation" .
+<http://purl.org/spar/frbr/#is_exemplar_of> <http://www.w3.org/2000/01/rdf-schema#label> "is_exemplar_of" .
+# 
+# http://purl.org/spar/frbr/#is_realization_of
+<http://purl.org/spar/frbr/#is_realization_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/frbr/#is_realization_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#expression> .
+<http://purl.org/spar/frbr/#is_realization_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#work> .
+<http://purl.org/spar/frbr/#is_realization_of> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression is realization of a work" .
+<http://purl.org/spar/frbr/#is_realization_of> <http://www.w3.org/2000/01/rdf-schema#label> "is_realization_of" .
+# 
+# http://www.owl-ontologies.com/base#ActContainsScene
+<http://www.owl-ontologies.com/base#ActContainsScene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#ActContainsScene> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#SceneBelongsToAct> .
+<http://www.owl-ontologies.com/base#ActContainsScene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Act> .
+<http://www.owl-ontologies.com/base#ActContainsScene> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#ActContainsScene> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular scene belongs to a particular act" .
+<http://www.owl-ontologies.com/base#ActContainsScene> <http://www.w3.org/2000/01/rdf-schema#label> "act contains scene" .
+# 
+# http://www.owl-ontologies.com/base#CommentsOn
+<http://www.owl-ontologies.com/base#CommentsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#CommentsOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#HasCriticalStudy> .
+<http://www.owl-ontologies.com/base#CommentsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#CriticalStudy> .
+<http://www.owl-ontologies.com/base#CommentsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#CommentsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "the critical study provides information about a particualr dramatic expression" .
+<http://www.owl-ontologies.com/base#CommentsOn> <http://www.w3.org/2000/01/rdf-schema#label> "comments on" .
+# 
+# http://www.owl-ontologies.com/base#ContainsAct
+<http://www.owl-ontologies.com/base#ContainsAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#ContainsAct> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression> .
+<http://www.owl-ontologies.com/base#ContainsAct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#ContainsAct> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Act> .
+<http://www.owl-ontologies.com/base#ContainsAct> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular dramatic expression contains an act" .
+<http://www.owl-ontologies.com/base#ContainsAct> <http://www.w3.org/2000/01/rdf-schema#label> "contains act" .
+# 
+# http://www.owl-ontologies.com/base#Edits
+<http://www.owl-ontologies.com/base#Edits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#Edits> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsEditedBy> .
+<http://www.owl-ontologies.com/base#Edits> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#EditingEntity> .
+<http://www.owl-ontologies.com/base#Edits> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#expression> .
+<http://www.owl-ontologies.com/base#Edits> <http://www.w3.org/2000/01/rdf-schema#comment> "An editing entity edits an expression" .
+<http://www.owl-ontologies.com/base#Edits> <http://www.w3.org/2000/01/rdf-schema#label> "edits" .
+# 
+# http://www.owl-ontologies.com/base#HasAccentualAnalysis
+<http://www.owl-ontologies.com/base#HasAccentualAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasAccentualAnalysis> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsAccentualAnalysis> .
+<http://www.owl-ontologies.com/base#HasAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#HasAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#AccentAnalysis> .
+<http://www.owl-ontologies.com/base#HasAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "A verse has accentual analysis" .
+<http://www.owl-ontologies.com/base#HasAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "has accentual analysis" .
+# 
+# http://www.owl-ontologies.com/base#HasAuthor
+<http://www.owl-ontologies.com/base#HasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasAuthor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsAuthorOf> .
+<http://www.owl-ontologies.com/base#HasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+<http://www.owl-ontologies.com/base#HasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Author> .
+# 
+# http://www.owl-ontologies.com/base#HasCharacter
+<http://www.owl-ontologies.com/base#HasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsCharacterIn> .
+<http://www.owl-ontologies.com/base#HasCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#HasCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#HasCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "A dramatic expression has a certain character" .
+<http://www.owl-ontologies.com/base#HasCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "has character" .
+# 
+# http://www.owl-ontologies.com/base#HasCriticalStudy
+<http://www.owl-ontologies.com/base#HasCriticalStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasCriticalStudy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#HasCriticalStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#CriticalStudy> .
+<http://www.owl-ontologies.com/base#HasCriticalStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Academic expression associated to a particular dramatic expression" .
+<http://www.owl-ontologies.com/base#HasCriticalStudy> <http://www.w3.org/2000/01/rdf-schema#label> "has critical study" .
+# 
+# http://www.owl-ontologies.com/base#HasMaritalStatus
+<http://www.owl-ontologies.com/base#HasMaritalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasMaritalStatus> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsMaritalStatusOf> .
+<http://www.owl-ontologies.com/base#HasMaritalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+<http://www.owl-ontologies.com/base#HasMaritalStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#HasMaritalStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "A characters has martial status" .
+<http://www.owl-ontologies.com/base#HasMaritalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has marital status" .
+# 
+# http://www.owl-ontologies.com/base#HasMetricStructure
+<http://www.owl-ontologies.com/base#HasMetricStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasMetricStructure> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsMetricStructureOf> .
+<http://www.owl-ontologies.com/base#HasMetricStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#MetricEntity> .
+<http://www.owl-ontologies.com/base#HasMetricStructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Metre> .
+<http://www.owl-ontologies.com/base#HasMetricStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "A metric entity has a metric structure" .
+<http://www.owl-ontologies.com/base#HasMetricStructure> <http://www.w3.org/2000/01/rdf-schema#label> "has metric structure" .
+# 
+# http://www.owl-ontologies.com/base#HasRole
+<http://www.owl-ontologies.com/base#HasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#HasRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#IsRoleOf> .
+<http://www.owl-ontologies.com/base#HasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#HasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#SocialRole> .
+<http://www.owl-ontologies.com/base#HasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A character has role" .
+<http://www.owl-ontologies.com/base#HasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role" .
+# 
+# http://www.owl-ontologies.com/base#IsAccentualAnalysis
+<http://www.owl-ontologies.com/base#IsAccentualAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AccentAnalysis> .
+<http://www.owl-ontologies.com/base#IsAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#IsAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "A certain accent analysis is analysis of a verse" .
+<http://www.owl-ontologies.com/base#IsAccentualAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "is accentual analysis" .
+# 
+# http://www.owl-ontologies.com/base#IsAuthorOf
+<http://www.owl-ontologies.com/base#IsAuthorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsAuthorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Author> .
+<http://www.owl-ontologies.com/base#IsAuthorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/frbr/#work> .
+# 
+# http://www.owl-ontologies.com/base#IsCharacterIn
+<http://www.owl-ontologies.com/base#IsCharacterIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsCharacterIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#IsCharacterIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#IsCharacterIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A character appears in a Dramatic Expression" .
+<http://www.owl-ontologies.com/base#IsCharacterIn> <http://www.w3.org/2000/01/rdf-schema#label> "is character in" .
+# 
+# http://www.owl-ontologies.com/base#IsEditedBy
+<http://www.owl-ontologies.com/base#IsEditedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsEditedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#expression> .
+<http://www.owl-ontologies.com/base#IsEditedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#EditingEntity> .
+<http://www.owl-ontologies.com/base#IsEditedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression is edited by an editing entity" .
+<http://www.owl-ontologies.com/base#IsEditedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is edited by" .
+# 
+# http://www.owl-ontologies.com/base#IsMaritalStatusOf
+<http://www.owl-ontologies.com/base#IsMaritalStatusOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsMaritalStatusOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+<http://www.owl-ontologies.com/base#IsMaritalStatusOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#IsMaritalStatusOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A character has a marital status" .
+<http://www.owl-ontologies.com/base#IsMaritalStatusOf> <http://www.w3.org/2000/01/rdf-schema#label> "is marital status of" .
+# 
+# http://www.owl-ontologies.com/base#IsMetricStructureOf
+<http://www.owl-ontologies.com/base#IsMetricStructureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsMetricStructureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Metre> .
+<http://www.owl-ontologies.com/base#IsMetricStructureOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#MetricEntity> .
+<http://www.owl-ontologies.com/base#IsMetricStructureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A certain metre describe the metric structure of a metric entity" .
+<http://www.owl-ontologies.com/base#IsMetricStructureOf> <http://www.w3.org/2000/01/rdf-schema#label> "is metric structure of" .
+# 
+# http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis
+<http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#SystemProduceAnalysis> .
+<http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AccentAnalysis> .
+<http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#AccentAnalysisSystem> .
+<http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "An accent analysis was created using a particular accent system and that information is critical to interpret it" .
+<http://www.owl-ontologies.com/base#IsObtainedThroughSistemAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "is obtained through system analysis" .
+# 
+# http://www.owl-ontologies.com/base#IsReferencedBy
+<http://www.owl-ontologies.com/base#IsReferencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsReferencedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#References> .
+<http://www.owl-ontologies.com/base#IsReferencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#IsReferencedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#IsReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An Academic Expression is referenced by another Academic Expression" .
+<http://www.owl-ontologies.com/base#IsReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by" .
+# 
+# http://www.owl-ontologies.com/base#IsRoleOf
+<http://www.owl-ontologies.com/base#IsRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsRoleOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#SocialRole> .
+<http://www.owl-ontologies.com/base#IsRoleOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#IsRoleOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A certain role is associated to a character" .
+<http://www.owl-ontologies.com/base#IsRoleOf> <http://www.w3.org/2000/01/rdf-schema#label> "is role of" .
+# 
+# http://www.owl-ontologies.com/base#IsStatedBy
+<http://www.owl-ontologies.com/base#IsStatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#IsStatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#States> .
+<http://www.owl-ontologies.com/base#IsStatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#IsStatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#IsStatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A verse is stated by one or more characters" .
+<http://www.owl-ontologies.com/base#IsStatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is stated by" .
+# 
+# http://www.owl-ontologies.com/base#MetricEntityContainsVerse
+<http://www.owl-ontologies.com/base#MetricEntityContainsVerse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#MetricEntityContainsVerse> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity> .
+<http://www.owl-ontologies.com/base#MetricEntityContainsVerse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#MetricEntity> .
+<http://www.owl-ontologies.com/base#MetricEntityContainsVerse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#MetricEntityContainsVerse> <http://www.w3.org/2000/01/rdf-schema#comment> "A metric entity contains 1 or more verses" .
+<http://www.owl-ontologies.com/base#MetricEntityContainsVerse> <http://www.w3.org/2000/01/rdf-schema#label> "metric entity contains verse" .
+# 
+# http://www.owl-ontologies.com/base#NoteReferencesVerse
+<http://www.owl-ontologies.com/base#NoteReferencesVerse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#NoteReferencesVerse> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote> .
+<http://www.owl-ontologies.com/base#NoteReferencesVerse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Note> .
+<http://www.owl-ontologies.com/base#NoteReferencesVerse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#NoteReferencesVerse> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular note references a verse of the dramatic expression and provides information about it" .
+<http://www.owl-ontologies.com/base#NoteReferencesVerse> <http://www.w3.org/2000/01/rdf-schema#label> "note references verse" .
+# 
+# http://www.owl-ontologies.com/base#References
+<http://www.owl-ontologies.com/base#References> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#References> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#References> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#References> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic expression references another academic expression to provide insigths on information sources" .
+<http://www.owl-ontologies.com/base#References> <http://www.w3.org/2000/01/rdf-schema#label> "references" .
+# 
+# http://www.owl-ontologies.com/base#SceneBelongsToAct
+<http://www.owl-ontologies.com/base#SceneBelongsToAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#SceneBelongsToAct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#SceneBelongsToAct> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Act> .
+<http://www.owl-ontologies.com/base#SceneBelongsToAct> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular scene belongs to an act" .
+<http://www.owl-ontologies.com/base#SceneBelongsToAct> <http://www.w3.org/2000/01/rdf-schema#label> "scene belongs to act" .
+# 
+# http://www.owl-ontologies.com/base#SceneContainsVerse
+<http://www.owl-ontologies.com/base#SceneContainsVerse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#SceneContainsVerse> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#VerseBelongsToScene> .
+<http://www.owl-ontologies.com/base#SceneContainsVerse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#SceneContainsVerse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#SceneContainsVerse> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular scene contains a verse" .
+<http://www.owl-ontologies.com/base#SceneContainsVerse> <http://www.w3.org/2000/01/rdf-schema#label> "scene contains verse" .
+# 
+# http://www.owl-ontologies.com/base#SceneHasStageDir
+<http://www.owl-ontologies.com/base#SceneHasStageDir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#SceneHasStageDir> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.owl-ontologies.com/base#StageDirBelongsToScene> .
+<http://www.owl-ontologies.com/base#SceneHasStageDir> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#SceneHasStageDir> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#StageDirection> .
+<http://www.owl-ontologies.com/base#SceneHasStageDir> <http://www.w3.org/2000/01/rdf-schema#comment> "An scene contains stage dir that provide non-linguistic information" .
+<http://www.owl-ontologies.com/base#SceneHasStageDir> <http://www.w3.org/2000/01/rdf-schema#label> "scene has stage dir" .
+# 
+# http://www.owl-ontologies.com/base#StageDirBelongsToScene
+<http://www.owl-ontologies.com/base#StageDirBelongsToScene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#StageDirBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#StageDirection> .
+<http://www.owl-ontologies.com/base#StageDirBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#StageDirBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#comment> "An stage dir belongs to a particular scene" .
+<http://www.owl-ontologies.com/base#StageDirBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#label> "stage dir belongs to scene" .
+# 
+# http://www.owl-ontologies.com/base#States
+<http://www.owl-ontologies.com/base#States> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#States> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#States> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#States> <http://www.w3.org/2000/01/rdf-schema#comment> "A character states a verse" .
+<http://www.owl-ontologies.com/base#States> <http://www.w3.org/2000/01/rdf-schema#label> "states" .
+# 
+# http://www.owl-ontologies.com/base#SystemProduceAnalysis
+<http://www.owl-ontologies.com/base#SystemProduceAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#SystemProduceAnalysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AccentAnalysisSystem> .
+<http://www.owl-ontologies.com/base#SystemProduceAnalysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#AccentAnalysis> .
+<http://www.owl-ontologies.com/base#SystemProduceAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "An accent system produces an accent analysis" .
+<http://www.owl-ontologies.com/base#SystemProduceAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "system produce analysis" .
+# 
+# http://www.owl-ontologies.com/base#TextualReference
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Note> .
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Note> .
+# 
+# http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity
+<http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#MetricEntity> .
+<http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A verse belongs to a particular metric entity" .
+<http://www.owl-ontologies.com/base#VerseBelongsToMetricEntity> <http://www.w3.org/2000/01/rdf-schema#label> "verse belongs to metric entity" .
+# 
+# http://www.owl-ontologies.com/base#VerseBelongsToScene
+<http://www.owl-ontologies.com/base#VerseBelongsToScene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#VerseBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#VerseBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#VerseBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#comment> "A verse belongs to a particular scene" .
+<http://www.owl-ontologies.com/base#VerseBelongsToScene> <http://www.w3.org/2000/01/rdf-schema#label> "verse belongs to scene" .
+# 
+# http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote
+<http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#Note> .
+<http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote> <http://www.w3.org/2000/01/rdf-schema#comment> "A verse is reerenciated in a note" .
+<http://www.owl-ontologies.com/base#VerseIsReferenciatedInNote> <http://www.w3.org/2000/01/rdf-schema#label> "verse is referenciated in note" .
+# 
+# http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression
+<http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Act> .
+<http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A certain act can be found in a particular dramatic expression" .
+<http://www.owl-ontologies.com/base#act_belongs_to_dramatic_expression> <http://www.w3.org/2000/01/rdf-schema#label> "act belongs to dramatic expression" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+# 
+# http://www.owl-ontologies.com/base#ActID
+<http://www.owl-ontologies.com/base#ActID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#ActID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Act> .
+<http://www.owl-ontologies.com/base#ActID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#ActID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identification of the act of a Dramatic Work" .
+<http://www.owl-ontologies.com/base#ActID> <http://www.w3.org/2000/01/rdf-schema#label> "act i d" .
+# 
+# http://www.owl-ontologies.com/base#Analysis
+<http://www.owl-ontologies.com/base#Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Analysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#AccentAnalysis> .
+<http://www.owl-ontologies.com/base#Analysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#Analysis> <http://www.w3.org/2000/01/rdf-schema#comment> "String representation of an accentual Analysis of a verse" .
+<http://www.owl-ontologies.com/base#Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "analysis" .
+# 
+# http://www.owl-ontologies.com/base#AuthorId
+<http://www.owl-ontologies.com/base#AuthorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#AuthorId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Author> .
+<http://www.owl-ontologies.com/base#AuthorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.owl-ontologies.com/base#AuthorId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of an author" .
+<http://www.owl-ontologies.com/base#AuthorId> <http://www.w3.org/2000/01/rdf-schema#label> "author id" .
+# 
+# http://www.owl-ontologies.com/base#Birthday
+<http://www.owl-ontologies.com/base#Birthday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Birthday> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Author> .
+<http://www.owl-ontologies.com/base#Birthday> <http://www.w3.org/2000/01/rdf-schema#comment> "birthdate of an author" .
+<http://www.owl-ontologies.com/base#Birthday> <http://www.w3.org/2000/01/rdf-schema#label> "birthdate" .
+# 
+# http://www.owl-ontologies.com/base#CompositionDate
+<http://www.owl-ontologies.com/base#CompositionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#CompositionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+<http://www.owl-ontologies.com/base#CompositionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.owl-ontologies.com/base#CompositionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "composition date of a dramatic work" .
+<http://www.owl-ontologies.com/base#CompositionDate> <http://www.w3.org/2000/01/rdf-schema#label> "composition date" .
+# 
+# http://www.owl-ontologies.com/base#Deathday
+<http://www.owl-ontologies.com/base#Deathday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Deathday> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Author> .
+<http://www.owl-ontologies.com/base#Deathday> <http://www.w3.org/2000/01/rdf-schema#comment> "deathdate of an author" .
+<http://www.owl-ontologies.com/base#Deathday> <http://www.w3.org/2000/01/rdf-schema#label> "deathdate" .
+# 
+# http://www.owl-ontologies.com/base#DeweyCode
+<http://www.owl-ontologies.com/base#DeweyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#DeweyCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#expression> .
+<http://www.owl-ontologies.com/base#DeweyCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#DeweyCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Dewey Code (bibliographic classification) assigned to a certain expression. It is compatible with most administrative systems in libraries all over the world." .
+<http://www.owl-ontologies.com/base#DeweyCode> <http://www.w3.org/2000/01/rdf-schema#label> "dewey code" .
+# 
+# http://www.owl-ontologies.com/base#EditingEntityId
+<http://www.owl-ontologies.com/base#EditingEntityId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#EditingEntityId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#EditingEntity> .
+<http://www.owl-ontologies.com/base#EditingEntityId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.owl-ontologies.com/base#EditingEntityId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of an editing entity" .
+<http://www.owl-ontologies.com/base#EditingEntityId> <http://www.w3.org/2000/01/rdf-schema#label> "editing entitiy id" .
+# 
+# http://www.owl-ontologies.com/base#HasPseudonym
+<http://www.owl-ontologies.com/base#HasPseudonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#HasPseudonym> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Character> .
+<http://www.owl-ontologies.com/base#HasPseudonym> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#HasPseudonym> <http://www.w3.org/2000/01/rdf-schema#comment> "Fake name of a character, usually used to hide thier original identity" .
+<http://www.owl-ontologies.com/base#HasPseudonym> <http://www.w3.org/2000/01/rdf-schema#label> "has pseudonym" .
+# 
+# http://www.owl-ontologies.com/base#Identificador
+<http://www.owl-ontologies.com/base#Identificador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Identificador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+<http://www.owl-ontologies.com/base#Identificador> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#Identificador> <http://www.w3.org/2000/01/rdf-schema#comment> "identificator of entities" .
+<http://www.owl-ontologies.com/base#Identificador> <http://www.w3.org/2000/01/rdf-schema#label> "identificator" .
+# 
+# http://www.owl-ontologies.com/base#Localization
+<http://www.owl-ontologies.com/base#Localization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Localization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#Localization> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#Localization> <http://www.w3.org/2000/01/rdf-schema#comment> "localization in which a scene takes place" .
+<http://www.owl-ontologies.com/base#Localization> <http://www.w3.org/2000/01/rdf-schema#label> "localization" .
+# 
+# http://www.owl-ontologies.com/base#MetreID
+<http://www.owl-ontologies.com/base#MetreID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#MetreID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Metre> .
+<http://www.owl-ontologies.com/base#MetreID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#MetreID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identification of a certain metre" .
+<http://www.owl-ontologies.com/base#MetreID> <http://www.w3.org/2000/01/rdf-schema#label> "metre i d" .
+# 
+# http://www.owl-ontologies.com/base#MetreSchema
+<http://www.owl-ontologies.com/base#MetreSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#MetreSchema> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Metre> .
+<http://www.owl-ontologies.com/base#MetreSchema> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#MetreSchema> <http://www.w3.org/2000/01/rdf-schema#comment> "Formal and metric pattern followed by a metre schema" .
+<http://www.owl-ontologies.com/base#MetreSchema> <http://www.w3.org/2000/01/rdf-schema#label> "metre schema" .
+# 
+# http://www.owl-ontologies.com/base#MetricEntityID
+<http://www.owl-ontologies.com/base#MetricEntityID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#MetricEntityID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#MetricEntity> .
+<http://www.owl-ontologies.com/base#MetricEntityID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#MetricEntityID> <http://www.w3.org/2000/01/rdf-schema#comment> "metrici entity identifier" .
+<http://www.owl-ontologies.com/base#MetricEntityID> <http://www.w3.org/2000/01/rdf-schema#label> "metric entity id" .
+# 
+# http://www.owl-ontologies.com/base#NSyllables
+<http://www.owl-ontologies.com/base#NSyllables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#NSyllables> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#NSyllables> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.owl-ontologies.com/base#NSyllables> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of syllables of a verse" .
+<http://www.owl-ontologies.com/base#NSyllables> <http://www.w3.org/2000/01/rdf-schema#label> "n syllables" .
+# 
+# http://www.owl-ontologies.com/base#Name
+<http://www.owl-ontologies.com/base#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/base#Character> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/base#Author> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#Name> <http://www.w3.org/2000/01/rdf-schema#comment> "name of a person or character" .
+<http://www.owl-ontologies.com/base#Name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://www.owl-ontologies.com/base#PublicationDate
+<http://www.owl-ontologies.com/base#PublicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#PublicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#expression> .
+<http://www.owl-ontologies.com/base#PublicationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of publication of a given expression" .
+<http://www.owl-ontologies.com/base#PublicationDate> <http://www.w3.org/2000/01/rdf-schema#label> "publication date" .
+# 
+# http://www.owl-ontologies.com/base#ReleaseDate
+<http://www.owl-ontologies.com/base#ReleaseDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#ReleaseDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#ReleaseDate> <http://www.w3.org/2000/01/rdf-schema#comment> "First representation of a dramatic work" .
+<http://www.owl-ontologies.com/base#ReleaseDate> <http://www.w3.org/2000/01/rdf-schema#label> "release date" .
+# 
+# http://www.owl-ontologies.com/base#SceneID
+<http://www.owl-ontologies.com/base#SceneID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#SceneID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Scene> .
+<http://www.owl-ontologies.com/base#SceneID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#SceneID> <http://www.w3.org/2000/01/rdf-schema#comment> "Scene identifier" .
+<http://www.owl-ontologies.com/base#SceneID> <http://www.w3.org/2000/01/rdf-schema#label> "scene id" .
+# 
+# http://www.owl-ontologies.com/base#StageDirectionID
+<http://www.owl-ontologies.com/base#StageDirectionID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#StageDirectionID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#StageDirection> .
+<http://www.owl-ontologies.com/base#StageDirectionID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#StageDirectionID> <http://www.w3.org/2000/01/rdf-schema#comment> "stage direction identifier" .
+<http://www.owl-ontologies.com/base#StageDirectionID> <http://www.w3.org/2000/01/rdf-schema#label> "stage direction id" .
+# 
+# http://www.owl-ontologies.com/base#Surname1
+<http://www.owl-ontologies.com/base#Surname1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Surname1> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Author> .
+<http://www.owl-ontologies.com/base#Surname1> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#Surname1> <http://www.w3.org/2000/01/rdf-schema#comment> "surname1 of an author" .
+<http://www.owl-ontologies.com/base#Surname1> <http://www.w3.org/2000/01/rdf-schema#label> "surname1" .
+# 
+# http://www.owl-ontologies.com/base#Surname2
+<http://www.owl-ontologies.com/base#Surname2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#Surname2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Author> .
+<http://www.owl-ontologies.com/base#Surname2> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#Surname2> <http://www.w3.org/2000/01/rdf-schema#comment> "surname2 of an author" .
+<http://www.owl-ontologies.com/base#Surname2> <http://www.w3.org/2000/01/rdf-schema#label> "surname2" .
+# 
+# http://www.owl-ontologies.com/base#TextStageDirection
+<http://www.owl-ontologies.com/base#TextStageDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#TextStageDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#StageDirection> .
+<http://www.owl-ontologies.com/base#TextStageDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#TextStageDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "text stage direction provided for further non-linguistic information" .
+<http://www.owl-ontologies.com/base#TextStageDirection> <http://www.w3.org/2000/01/rdf-schema#label> "text stage direction" .
+# 
+# http://www.owl-ontologies.com/base#TextVerse
+<http://www.owl-ontologies.com/base#TextVerse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#TextVerse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#TextVerse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#TextVerse> <http://www.w3.org/2000/01/rdf-schema#comment> "Text contained in a verse" .
+<http://www.owl-ontologies.com/base#TextVerse> <http://www.w3.org/2000/01/rdf-schema#label> "text verse" .
+# 
+# http://www.owl-ontologies.com/base#TextualReference
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.owl-ontologies.com/base#VerseID
+<http://www.owl-ontologies.com/base#VerseID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#VerseID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/base#Verse> .
+<http://www.owl-ontologies.com/base#VerseID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#VerseID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of a verse" .
+<http://www.owl-ontologies.com/base#VerseID> <http://www.w3.org/2000/01/rdf-schema#label> "verse id" .
+# 
+# http://www.owl-ontologies.com/base#WorkId
+<http://www.owl-ontologies.com/base#WorkId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/base#WorkId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/frbr/#work> .
+<http://www.owl-ontologies.com/base#WorkId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.owl-ontologies.com/base#WorkId> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of a Work" .
+<http://www.owl-ontologies.com/base#WorkId> <http://www.w3.org/2000/01/rdf-schema#label> "work id" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/bibo/#AcademicArticle
+<http://purl.org/ontology/bibo/#AcademicArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/bibo/#AcademicArticle> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/base#Paper> .
+<http://purl.org/ontology/bibo/#AcademicArticle> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/base#CriticalStudy> .
+<http://purl.org/ontology/bibo/#AcademicArticle> <http://www.w3.org/2000/01/rdf-schema#comment> "Academic Expression Typology. Equivalent to Paper" .
+<http://purl.org/ontology/bibo/#AcademicArticle> <http://www.w3.org/2000/01/rdf-schema#label> "Academic Article" .
+# 
+# http://purl.org/spar/frbr/#expression
+<http://purl.org/spar/frbr/#expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/frbr/#expression> <http://www.w3.org/2000/01/rdf-schema#comment> "Realisation of the intellectual or artistic content of a Work. Thus the original text of Alice's Adventures in Wonderland and its Italian translation Le Avventure di Alice nel Paese delle Meraviglie refer to different Expressions of the same Work. An Expression is embodied in one or more Manifestations" .
+<http://purl.org/spar/frbr/#expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression" .
+# 
+# http://purl.org/spar/frbr/#item
+<http://purl.org/spar/frbr/#item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/frbr/#item> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical representation of a manifestation (eg.: physical book of a certain edition)" .
+<http://purl.org/spar/frbr/#item> <http://www.w3.org/2000/01/rdf-schema#label> "item" .
+# 
+# http://purl.org/spar/frbr/#manifestation
+<http://purl.org/spar/frbr/#manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/frbr/#manifestation> <http://www.w3.org/2000/01/rdf-schema#comment> "Manifestation of a work defines its particular physical or electronic embodiment, for example, the particular format in which Alice's Adventures in Wonderland is stored: as a printed object or in HTML, represent two quite different Manifestations. In publishing, different manifestations of a journal article will all bear the same Digital Object Identifier (DOI), which identifies the Expression of the work, not its various Manifestations. However, a paperback and a hardback version of a book will bear different International Standard Book Numbers (ISBNs), since these identifiers are assigned at the Manifestation level. A Manifestation is exemplified by one or more Items;" .
+<http://purl.org/spar/frbr/#manifestation> <http://www.w3.org/2000/01/rdf-schema#label> "manifestation" .
+# 
+# http://purl.org/spar/frbr/#work
+<http://purl.org/spar/frbr/#work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/frbr/#work> <http://www.w3.org/2000/01/rdf-schema#comment> "High-level abstract Platonic concept of the essence of a distinct intellectual or artistic creation, for example the ideas in Lewis Carroll's head concerning Alice's Adventures in Wonderland, independent of any representation of these ideas in a particular form. A Work is realised through one or more Expressions;" .
+<http://purl.org/spar/frbr/#work> <http://www.w3.org/2000/01/rdf-schema#label> "work" .
+# 
+# http://www.owl-ontologies.com/base#AcademicExpression
+<http://www.owl-ontologies.com/base#AcademicExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#AcademicExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/frbr/#expression> .
+<http://www.owl-ontologies.com/base#AcademicExpression> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/base#DramaticExpression> .
+<http://www.owl-ontologies.com/base#AcademicExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "Non literary expression  whose aim is to study or analyse a dramatic expression" .
+<http://www.owl-ontologies.com/base#AcademicExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Academic Expression" .
+# 
+# http://www.owl-ontologies.com/base#AcademicWork
+<http://www.owl-ontologies.com/base#AcademicWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#AcademicWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/frbr/#work> .
+<http://www.owl-ontologies.com/base#AcademicWork> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/base#DramaticWork> .
+<http://www.owl-ontologies.com/base#AcademicWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Work whose ai is to study or analyse a Dramatic Work" .
+<http://www.owl-ontologies.com/base#AcademicWork> <http://www.w3.org/2000/01/rdf-schema#label> "Academic Work" .
+# 
+# http://www.owl-ontologies.com/base#AccentAnalysis
+<http://www.owl-ontologies.com/base#AccentAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#AccentAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Text description of the accent distribution over a verse" .
+<http://www.owl-ontologies.com/base#AccentAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Accent Analysis" .
+# 
+# http://www.owl-ontologies.com/base#AccentAnalysisSystem
+<http://www.owl-ontologies.com/base#AccentAnalysisSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#AccentAnalysisSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference System to perform the accent analysis" .
+<http://www.owl-ontologies.com/base#AccentAnalysisSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Accent Analysis System" .
+# 
+# http://www.owl-ontologies.com/base#Act
+<http://www.owl-ontologies.com/base#Act> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Act> <http://www.w3.org/2000/01/rdf-schema#comment> "Major subsection of a Dramatic Expression that devides plot" .
+<http://www.owl-ontologies.com/base#Act> <http://www.w3.org/2000/01/rdf-schema#label> "Act" .
+# 
+# http://www.owl-ontologies.com/base#Author
+<http://www.owl-ontologies.com/base#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Author> <http://www.w3.org/2000/01/rdf-schema#comment> "Creator of a work" .
+<http://www.owl-ontologies.com/base#Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author" .
+# 
+# http://www.owl-ontologies.com/base#Balbin
+<http://www.owl-ontologies.com/base#Balbin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Balbin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#AccentAnalysisSystem> .
+<http://www.owl-ontologies.com/base#Balbin> <http://www.w3.org/2000/01/rdf-schema#comment> "Accent System developed by Balbin" .
+<http://www.owl-ontologies.com/base#Balbin> <http://www.w3.org/2000/01/rdf-schema#label> "Balbin" .
+# 
+# http://www.owl-ontologies.com/base#Bello
+<http://www.owl-ontologies.com/base#Bello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Bello> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#AccentAnalysisSystem> .
+<http://www.owl-ontologies.com/base#Bello> <http://www.w3.org/2000/01/rdf-schema#comment> "Accent System Developed by Andrés Bello" .
+<http://www.owl-ontologies.com/base#Bello> <http://www.w3.org/2000/01/rdf-schema#label> "Bello" .
+# 
+# http://www.owl-ontologies.com/base#Character
+<http://www.owl-ontologies.com/base#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Each one of the living entities that take part in a Dramatic Expression and contributes to the development of the plot" .
+<http://www.owl-ontologies.com/base#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character" .
+# 
+# http://www.owl-ontologies.com/base#CriticalStudy
+<http://www.owl-ontologies.com/base#CriticalStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#CriticalStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#CriticalStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Academic Expression that explain a certain dramatic expression taking into account the intelectual, historical and literary guidelines used for its conformation. It is usually published together with the dramatic expression they comment on." .
+<http://www.owl-ontologies.com/base#CriticalStudy> <http://www.w3.org/2000/01/rdf-schema#label> "Critical Study" .
+# 
+# http://www.owl-ontologies.com/base#DramaticExpression
+<http://www.owl-ontologies.com/base#DramaticExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#DramaticExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/frbr/#expression> .
+<http://www.owl-ontologies.com/base#DramaticExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "Concrete expression of a Dramatic Work" .
+<http://www.owl-ontologies.com/base#DramaticExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Dramatic Expression" .
+# 
+# http://www.owl-ontologies.com/base#DramaticWork
+<http://www.owl-ontologies.com/base#DramaticWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#DramaticWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/frbr/#work> .
+<http://www.owl-ontologies.com/base#DramaticWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Literary Work of the dramatic genre" .
+<http://www.owl-ontologies.com/base#DramaticWork> <http://www.w3.org/2000/01/rdf-schema#label> "Dramatic Work" .
+# 
+# http://www.owl-ontologies.com/base#EditingEntity
+<http://www.owl-ontologies.com/base#EditingEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#EditingEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Institution editing an expression" .
+<http://www.owl-ontologies.com/base#EditingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "editing entity" .
+# 
+# http://www.owl-ontologies.com/base#Metre
+<http://www.owl-ontologies.com/base#Metre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Metre> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific formal pattern followed by 1 or more verses" .
+<http://www.owl-ontologies.com/base#Metre> <http://www.w3.org/2000/01/rdf-schema#label> "Metre" .
+# 
+# http://www.owl-ontologies.com/base#MetricEntity
+<http://www.owl-ontologies.com/base#MetricEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#MetricEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual entity conformed by 1 or more verses that follow a certain Metre" .
+<http://www.owl-ontologies.com/base#MetricEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Metric Entity" .
+# 
+# http://www.owl-ontologies.com/base#NTomas
+<http://www.owl-ontologies.com/base#NTomas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#NTomas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#AccentAnalysisSystem> .
+<http://www.owl-ontologies.com/base#NTomas> <http://www.w3.org/2000/01/rdf-schema#comment> "Accent System developed by Tomás Navarro Tomás" .
+<http://www.owl-ontologies.com/base#NTomas> <http://www.w3.org/2000/01/rdf-schema#label> "N Tomas" .
+# 
+# http://www.owl-ontologies.com/base#NonStrophicSeries
+<http://www.owl-ontologies.com/base#NonStrophicSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#NonStrophicSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#Metre> .
+<http://www.owl-ontologies.com/base#NonStrophicSeries> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.owl-ontologies.com/base#StrophicSeries> .
+<http://www.owl-ontologies.com/base#NonStrophicSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Metres that are not structured in Strophes" .
+<http://www.owl-ontologies.com/base#NonStrophicSeries> <http://www.w3.org/2000/01/rdf-schema#label> "Non Strophic Series" .
+# 
+# http://www.owl-ontologies.com/base#Note
+<http://www.owl-ontologies.com/base#Note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Note> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment or analysis of a defined and usually short fragment of the text. Generally referred to one or more verses" .
+<http://www.owl-ontologies.com/base#Note> <http://www.w3.org/2000/01/rdf-schema#label> "Note" .
+# 
+# http://www.owl-ontologies.com/base#Paper
+<http://www.owl-ontologies.com/base#Paper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Paper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#AcademicExpression> .
+<http://www.owl-ontologies.com/base#Paper> <http://www.w3.org/2000/01/rdf-schema#comment> "Standard academic study pubished in a journal or similar edition typology" .
+<http://www.owl-ontologies.com/base#Paper> <http://www.w3.org/2000/01/rdf-schema#label> "paper" .
+# 
+# http://www.owl-ontologies.com/base#Scene
+<http://www.owl-ontologies.com/base#Scene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Scene> <http://www.w3.org/2000/01/rdf-schema#comment> "Major subsection of an act. It is usually defined to contain complete events in the plot." .
+<http://www.owl-ontologies.com/base#Scene> <http://www.w3.org/2000/01/rdf-schema#label> "Scene" .
+# 
+# http://www.owl-ontologies.com/base#SocialRole
+<http://www.owl-ontologies.com/base#SocialRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#SocialRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Social role of  a given character" .
+<http://www.owl-ontologies.com/base#SocialRole> <http://www.w3.org/2000/01/rdf-schema#label> "Social Role" .
+# 
+# http://www.owl-ontologies.com/base#StageDirection
+<http://www.owl-ontologies.com/base#StageDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#StageDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Descriptive text to provide indication about non linguistic elements in the play such as objects to be used, scenario design or character movement" .
+<http://www.owl-ontologies.com/base#StageDirection> <http://www.w3.org/2000/01/rdf-schema#label> "Stage Direction" .
+# 
+# http://www.owl-ontologies.com/base#StrophicSeries
+<http://www.owl-ontologies.com/base#StrophicSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#StrophicSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.owl-ontologies.com/base#Metre> .
+<http://www.owl-ontologies.com/base#StrophicSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "Metres structured into Strophes" .
+<http://www.owl-ontologies.com/base#StrophicSeries> <http://www.w3.org/2000/01/rdf-schema#label> "Strophic Series" .
+# 
+# http://www.owl-ontologies.com/base#Verse
+<http://www.owl-ontologies.com/base#Verse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/base#Verse> <http://www.w3.org/2000/01/rdf-schema#comment> "Graphical division of character statements. For simplicity, we assimilate here that a verse is a line in the text" .
+<http://www.owl-ontologies.com/base#Verse> <http://www.w3.org/2000/01/rdf-schema#label> "Verse" .
+# 
+# http://www.owl-ontologies.com/skos#MaritalStatus
+<http://www.owl-ontologies.com/skos#MaritalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/skos#MaritalStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Marital Status of a Character" .
+<http://www.owl-ontologies.com/skos#MaritalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Marital Status" .
+# 
+# http://www.w3.org/2001/XMLSchema#
+<http://www.w3.org/2001/XMLSchema#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/base#CrownPrince
+<http://www.owl-ontologies.com/base#CrownPrince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#CrownPrince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#CrownPrincess
+<http://www.owl-ontologies.com/base#CrownPrincess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#CrownPrincess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#Duchess
+<http://www.owl-ontologies.com/base#Duchess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#Duchess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#Duke
+<http://www.owl-ontologies.com/base#Duke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#Duke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#ExtramaritalRelationship
+<http://www.owl-ontologies.com/base#ExtramaritalRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#ExtramaritalRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+# 
+# http://www.owl-ontologies.com/base#King
+<http://www.owl-ontologies.com/base#King> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#King> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#Knight
+<http://www.owl-ontologies.com/base#Knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#Knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#Prince
+<http://www.owl-ontologies.com/base#Prince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#Prince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#Princess
+<http://www.owl-ontologies.com/base#Princess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#Princess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#Queen
+<http://www.owl-ontologies.com/base#Queen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#Queen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/base#servant
+<http://www.owl-ontologies.com/base#servant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/base#servant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/base#SocialRole> .
+# 
+# http://www.owl-ontologies.com/skos#MarriedMen
+<http://www.owl-ontologies.com/skos#MarriedMen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/skos#MarriedMen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+# 
+# http://www.owl-ontologies.com/skos#MarriedWoman
+<http://www.owl-ontologies.com/skos#MarriedWoman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/skos#MarriedWoman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+# 
+# http://www.owl-ontologies.com/skos#SinglePersons
+<http://www.owl-ontologies.com/skos#SinglePersons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/skos#SinglePersons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+# 
+# http://www.owl-ontologies.com/skos#Widows
+<http://www.owl-ontologies.com/skos#Widows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/skos#Widows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.owl-ontologies.com/skos#MaritalStatus> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to a particular fragment of the text" .
+<http://www.owl-ontologies.com/base#TextualReference> <http://www.w3.org/2000/01/rdf-schema#label> "textual reference" .
+# 
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Accent System developed by Andrés Bello" .
+<http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Accent System developed by Tomás Navarro Tomás" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/base#NTomas> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/base#Bello> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.owl-ontologies.com/base#Balbin> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
